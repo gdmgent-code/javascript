@@ -1,0 +1,36 @@
+:root {
+    --color-indigo: #673bb7;
+    --color-pink: #e91c62;
+    --color-orange: #ff5621;
+    --color-yellow: #ffeb3b;
+    --color-green: #8bc34a;
+}
+
+.mdl-list__item-avatar.material-icons.parking-state__indicator {
+    transition: all 1268ms ease 0s;
+}
+
+.mdl-list__item-avatar.material-icons.ps--full {
+    color: var(--color-pink);
+}
+
+.mdl-list__item-avatar.material-icons.ps--middle {
+    color: var(--color-orange);
+}
+
+.mdl-list__item-avatar.material-icons.ps--free {
+    color: var(--color-green);
+}
+.mdl-list__item-secondary-content.parking-state__capacity {
+    flex-direction: row;
+}
+.parking-state__availablecapacity {
+    display: inline;
+}
+.parking-state__availablecapacity::after {
+    content: '/';
+    display: inline-block;
+}
+.parking-state__totalcapacity {
+    display: inline;
+}
